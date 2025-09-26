@@ -36,10 +36,7 @@ copyright:
 
   # Displayed in the footer
   brief: All Rights Reserved
-  verbose: >-
-    All projects developed by Obscuria are distributed under an All Rights Reserved license.
-    Use of these projects is permitted only within the scope explicitly defined on the LICENSE page.
-    Any use outside this scope requires prior written permission from the copyright holder.
+  verbose: All rights reserved unless explicitly stated otherwise. See the License page in the sidebar for permitted uses.
 
 meta: Using the :THEME theme for :PLATFORM.
 
