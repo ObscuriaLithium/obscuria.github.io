@@ -1,18 +1,26 @@
+:root {
+  --c-sidebar-bg: linear-gradient(-45deg, #242428 25%, #382938 100%);
+  --c-sidebar-tab-tx-hover: #ffffff;
+  --c-sidebar-tab-bg-hover: #ff84ff00;
+  --c-sidebar-tab-bg-active: #ff84ff20;
+  --c-toc-accent: #cb7aeb;
+}
+
 #sidebar {
-  background: linear-gradient(-45deg, #242428 25%, #382938 100%);
+  background: var(--c-sidebar-bg);
 }
 
 #sidebar ul li.nav-item a.nav-link {
   transition: color 0.3s ease;
 
   &:hover {
-    color: #ffffff;
-    background-color: #ff84ff00;
+    color: var(--c-sidebar-tab-tx-hover);
+    background-color: var(--c-sidebar-tab-bg-hover);
   }
 }
 
 #sidebar ul li.nav-item.active a.nav-link {
-  background-color: #ff84ff20;
+  background-color: var(--c-sidebar-tab-bg-active);
 }
 
 #sidebar ul li.nav-item a.nav-link span {
@@ -20,14 +28,19 @@
   letter-spacing: 0.6px;
 }
 
+#sidebar .sidebar-bottom {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 #toc-wrapper ul .toc-link:hover {
-  color: #cb7aeb;
+  color: var(--c-toc-accent);
 }
 
 #toc-wrapper ul .is-active-link {
-  color: #cb7aeb !important;
+  color: var(--c-toc-accent) !important;
 }
 
 #toc-wrapper ul .is-active-link::before {
-  background-color: #cb7aeb !important;
+  background-color: var(--c-toc-accent) !important;
 }

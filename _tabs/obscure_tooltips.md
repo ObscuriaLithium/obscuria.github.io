@@ -41,7 +41,7 @@ Panels define the visual background of a tooltip and serve as the foundation for
 
 #### 1. [Blank Panel](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/panel/BlankPanel.java)
 
-Renders nothing but prevents fallback to subsequent elements.
+Essentially, it acts as an invisible placeholder.
 
 ```json
 {
@@ -75,12 +75,14 @@ A rectangular panel with a border styled after the vanilla design. The gradient 
 
 ### Frames
 
+Frames are decorative layers drawn on top of panels in tooltips.
+
 > Resource Pack Directory: `assets/<modid>/tooltips/element/frame/`
 {: .prompt-tip }
 
 #### 1. [Blank Frame](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/frame/BlankFrame.java)
 
-Renders nothing but prevents fallback to subsequent elements.
+Essentially, it acts as an invisible placeholder.
 
 ```json
 {
@@ -89,6 +91,8 @@ Renders nothing but prevents fallback to subsequent elements.
 ```
 
 #### 2. [Nine Sliced Frame](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/frame/NineSlicedFrame.java)
+
+This frame uses a texture divided into 9 sections to automatically stretch and align the corners and edges of the tooltip. You can use the built-in [golden_frame.png](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/resources/assets/obscure_tooltips/textures/gui/golden_frame.png) as a reference for positioning your own textures.
 
 ```json
 {
@@ -101,13 +105,12 @@ Renders nothing but prevents fallback to subsequent elements.
 
 ### Slots
 
-
 > Resource Pack Directory: `assets/<modid>/tooltips/element/slot/`
 {: .prompt-tip }
 
 #### 1. [Blank Slot](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/slot/BlankSlot.java)
 
-Renders nothing but prevents fallback to subsequent elements.
+Essentially, it acts as an invisible placeholder.
 
 ```json
 {
@@ -116,6 +119,8 @@ Renders nothing but prevents fallback to subsequent elements.
 ```
 
 #### 2. [Color Rect Slot](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/slot/ColorRectSlot.java)
+
+A rectangular panel with a borders.
 
 ```json
 {
@@ -139,7 +144,7 @@ Renders nothing but prevents fallback to subsequent elements.
 
 #### 1. [Blank Icon](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/icon/BlankIcon.java)
 
-Renders nothing but prevents fallback to subsequent elements.
+Essentially, it acts as an invisible placeholder.
 
 ```json
 {
