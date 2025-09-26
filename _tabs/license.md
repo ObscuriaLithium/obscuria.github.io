@@ -15,7 +15,7 @@ All projects developed by Obscuria are distributed under an All Rights Reserved 
 
 1. **Modpacks**. Inclusion of the original, unmodified mod files in CurseForge and Modrinth modpacks, including monetization through the official author reward programs of these platforms.
 - Modifications within modpacks are permitted only when implemented through external hooks, mixins, or similar runtime mechanisms.
--  The original mod files must always be loaded by the user directly from official distribution sources, and runtime modifications must not attempt to rebrand or misrepresent the project.
+- The original mod files must always be loaded by the user directly from official distribution sources, and runtime modifications must not attempt to rebrand or misrepresent the project.
 2. **Content Creation**. Creation and publication of video or streaming content (e.g., YouTube, Twitch, or similar platforms) featuring the mods, including monetization through standard platform features such as ads, memberships, or donations.
 3. **Servers**. Use of the original, unmodified mod files on non-commercial servers.
 4. **Community Contributions**. Forks, pull requests, bug reports, feature requests, or other contributions are welcome, provided they are intended as collaborative input into the official project and not for independent redistribution or rebranding.
