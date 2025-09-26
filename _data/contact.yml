@@ -1,5 +1,9 @@
 #  The contact options.
 
+- type: curseforge
+  icon: "fas fa-fire"
+  url: "https://www.curseforge.com/members/obscuria/projects"
+
 - type: github
   icon: "fab fa-github"
 
