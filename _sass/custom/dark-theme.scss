@@ -1,0 +1,33 @@
+#sidebar {
+  background: linear-gradient(-45deg, #242428 25%, #382938 100%);
+}
+
+#sidebar ul li.nav-item a.nav-link {
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #ff84ff00;
+  }
+}
+
+#sidebar ul li.nav-item.active a.nav-link {
+  background-color: #ff84ff20;
+}
+
+#sidebar ul li.nav-item a.nav-link span {
+  font-size: 95%;
+  letter-spacing: 0.6px;
+}
+
+#toc-wrapper ul .toc-link:hover {
+  color: #cb7aeb;
+}
+
+#toc-wrapper ul .is-active-link {
+  color: #cb7aeb !important;
+}
+
+#toc-wrapper ul .is-active-link::before {
+  background-color: #cb7aeb !important;
+}
