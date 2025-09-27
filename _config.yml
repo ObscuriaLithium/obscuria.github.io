@@ -119,10 +119,10 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
+    repo: ObscuriaLithium/obscurialithium.github.io # <gh-username>/<repo>
+    repo_id: R_kgDOP28ILQ
+    category: Comments
+    category_id: DIC_kwDOP28ILc4Cv8T6
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
