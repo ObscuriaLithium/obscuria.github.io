@@ -5,6 +5,7 @@ layout: post
 icon: fas fa-book
 order: 1
 toc: true
+comments: true
 image:
   path: /assets/images/obscure-tooltips-logo.jpg
 ---
