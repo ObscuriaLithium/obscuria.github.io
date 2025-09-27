@@ -544,3 +544,7 @@ If you want to completely disable the built-in tooltips from the mod, you can ov
 ## Hotswap
 
 While developing a resource pack, you can quickly reload your changes in-game by pressing `F3 + T` inside a Minecraft world.
+
+## Any Questions?
+
+Join my [Discord Server](https://dsc.gg/obscuria) or ask your question in the comments at the bottom of this page.
