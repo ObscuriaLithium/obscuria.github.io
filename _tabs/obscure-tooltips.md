@@ -1,5 +1,4 @@
 ---
-# the default layout is 'page'
 title: Obscure Tooltips
 layout: post
 icon: fas fa-book
@@ -52,7 +51,7 @@ Essentially, it acts as an invisible placeholder.
 
 #### 2. [Color Rect Panel](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/panel/ColorRectPanel.java)
 
-A rectangular panel with a border styled after the vanilla design. The gradient palette can be customized for both the panel surface and its border.
+A rectangular panel with a border styled after the vanilla design. The gradient palette can be customized for both the panel surface and its border. See [Colors](#colors) for more details.
 
 ```json
 {
@@ -155,6 +154,8 @@ Essentially, it acts as an invisible placeholder.
 
 #### 2. [Static Icon](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/icon/StaticIcon.java)
 
+See [Transform](#transform) for more details.
+
 ```json
 {
   "type": "obscure_tooltips:static",
@@ -243,6 +244,8 @@ Essentially, it acts as an invisible placeholder.
 ```
 
 #### 3. [Inward Particle Effect](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/element/effect/InwardParticleEffect.java)
+
+See [Particles](#particles) for more details.
 
 ```json
 {
@@ -532,6 +535,69 @@ For example, the following file will display the **rarity label** for **all item
 ```
 
 -----
+
+## Miscellaneous
+
+### Colors
+
+Whenever you need to define a color, you can use one of the following formats:
+
+- **Hexadecimal (ARGB)** – a string in the form #AARRGGBB
+- **Decimal (ARGB)** — a 32-bit unsigned integer value
+- **Normalized float array (ARGB)** — an array of four values in the range 0.0–1.0, representing [Alpha, Red, Green, Blue]
+
+```json
+{
+  "color": "#ffffffff",
+  "color": 4294967295,
+  "color": [ 1.0, 1.0, 1.0, 1.0 ]
+}
+```
+
+### Transform
+
+The transform object is always optional. If omitted, default values are used. Each property inside transform is also optional and will fall back to its own default.
+
+- **offset** — a 3D vector [x, y, z] that shifts the object’s position
+- **scale** — a uniform scale factor (default: 1.0)
+- **rotation** — a rotation angle in degrees (default: 0.0)
+
+```json
+"transform": {
+  "offset": [ 0.0, 0.0, 0.0 ],
+  "scale": 1.0,
+  "rotation": 0.0
+}
+```
+
+### Particles
+
+Particles are used by certain effects. There are multiple particle types available:
+
+#### 1. [Line Particle](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/particle/LineParticle.java)
+
+A horizontal line one pixel thick, with a gradient fading toward the center.
+
+```json
+"particle": {
+  "type": "obscure_tooltips:line",
+  "center_color": "#ffffffff",
+  "edge_color": "#00ffffff",
+  "transform": {}
+}
+```
+
+#### 2. [Texture Particle](https://github.com/ObscuriaLithium/obscure-tooltips/blob/master/common/src/main/java/dev/obscuria/tooltips/client/particle/TextureParticle.java)
+
+A particle rendered from a square texture. Any 1:1 resolution texture can be used, but with the default scale it is treated as having a virtual size of 16x16 pixels.
+
+```json
+"particle": {
+  "type": "obscure_tooltips:texture",
+  "texture": "obscure_tooltips:textures/gui/particle/star.png",
+  "transform": {}
+}
+```
 
 ## Example Usage
 
